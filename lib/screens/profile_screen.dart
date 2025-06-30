@@ -9,7 +9,10 @@ class ProfileScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'Profile',
-          style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+            fontSize: 16,
+          ),
         ),
         automaticallyImplyLeading: false,
         elevation: 0,
@@ -22,7 +25,11 @@ class ProfileScreen extends StatelessWidget {
             const CircleAvatar(
               radius: 40,
               backgroundColor: Colors.black12,
-              child: Icon(Icons.person, size: 40, color: Colors.black45),
+              child: Icon(
+                Icons.person,
+                size: 40,
+                color: Colors.black45,
+              ),
             ),
             const SizedBox(height: 12),
             const Text(
@@ -36,7 +43,10 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(height: 4),
             Text(
               'user@example.com',
-              style: TextStyle(fontSize: 10, color: Colors.grey.shade600),
+              style: TextStyle(
+                fontSize: 10,
+                color: Colors.grey.shade600,
+              ),
             ),
             const SizedBox(height: 24),
             Container(
@@ -69,7 +79,11 @@ class ProfileScreen extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
       child: Row(
         children: [
-          Icon(icon, size: 18, color: isRed ? Colors.red : Colors.black54),
+          Icon(
+            icon,
+            size: 18,
+            color: isRed ? Colors.red : Colors.black54,
+          ),
           const SizedBox(width: 12),
           Text(
             label.toUpperCase(),
@@ -81,7 +95,11 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          Icon(Icons.chevron_right, size: 16, color: Colors.grey.shade400),
+          Icon(
+            Icons.chevron_right,
+            size: 16,
+            color: Colors.grey.shade400,
+          ),
         ],
       ),
     );
